@@ -1,0 +1,46 @@
+e2e: end to end (test)
+angular.json (config angular cli)
+karma.cong.js (console tool for running tests)
+tsconfig.json (specifies the root files and the compiler options required to compile the project)
+tsconfig.app.json (related to the Angular App in particular)
+tsconfig.spec.json (TypeScript configuration for the application tests)
+tslint (An extensible linter for the TypeScript language.)
+
+Application Angular: Assemblage de un ou plusieurs components, indépendants ou enfants.
+
+Module: c'est un container de components.
+
+---
+
+app.component.ts (logique du component)
+
+@component, décorateur comprenant un objet avec des couples clé/valeur 'selector, template/templateUrl, style).
+Il faut toujours un component racine qui va contenir les autres components.
+
+---
+
+app.modules.ts
+
+declarations, les composants intégrés au module (à importer).
+imports, les modules à importer propres à angular.
+bootstrap, l'élément sur lequel l'application Angular va démarer.
+provider, pour les services.
+
+---
+
+Créer un component
+
+ng generate component hero-detail
+
+The command scaffolds the following:
+
+Creates a directory src/app/hero-detail.
+Inside that directory four files are generated:
+
+A CSS file for the component styles.
+An HTML file for the component template.
+A TypeScript file with a component class named HeroDetailComponent.
+A test file for the HeroDetailComponent class.
+
+
+
